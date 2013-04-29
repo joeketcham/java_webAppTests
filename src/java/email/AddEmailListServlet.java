@@ -6,6 +6,7 @@ import javax.servlet.http.*;
 
 import business.User;
 import data.UserIO;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Set;
 
@@ -35,6 +36,15 @@ public class AddEmailListServlet extends HttpServlet
         // send the current date
         Date currentDate = new Date();
         request.setAttribute("currentDate", currentDate);
+        
+        // send an array of colors to the view
+        String[] colors = {"Red", "blue", "green"};
+        ServletContext application = this.getServletContext();
+        application.setAttribute("colors", colors);
+        
+        // get array of users from the stored data using userIO
+        ArrayList<User> users = UserIO.getUsers(path);
+        application.setAttribute("users", users);
         
         // forward request and response objects to JSP page
         String url = "/display_email_entry_EL.jsp";
