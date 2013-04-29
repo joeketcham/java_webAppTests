@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email List applications</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="JavaScript">
+            function validate(form)
+            {
+                if (form.firstName.value=="")
+                    {
+                        alert("Please fill in your first name");
+                        form.firstName.focus();
+                    }
+                if (form.lastName.value=="")
+                    {
+                        alert("Please fill in your last name");
+                        form.lastName.focus();
+                    }
+                if (form.emailAddress.value=="")
+                    {
+                        alert("Please fill in your address");
+                        form.emailAddress.focus();
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Join our email list</h1>
+        <p>To join our email list, enter your stuff:</p>
+        <form action="AddToEmailList" method="post">
+            <table cellspacing="5" border="0">
+                <tr>
+                    <td align="right">First name:</td>
+                    <td><input type="text" name="firstName"
+                               value="<%= user.getFirstname() %>"></td>
+                </tr>
+                <tr>
+                    <td align="right">Last name:</td>
+                    <td><input type="text" name="lastName"
+                               value="<%= user.getLastName() %>"></td>
+                </tr>
+                <tr>
+                    <td align="right">Email address:</td>
+                    <td><input type="text" name="emailAddress"
+                               value="<%= user.getEmailAddress() %>"></td>
+                </tr>
+                
+
+                <tr>
+                    <td></td>
+                    <td><br><input type="button" value="Submit" 
+                                   onClick="validate(this.form);"></td>
+                </tr>                
+            </table>            
+        </form>
+
+        <a href="index.jsp">test link to index</a>    
+        <br><a href="/">test to root</a>
+    </body>
+</html>
