@@ -6,6 +6,8 @@ import javax.servlet.http.*;
 
 import business.User;
 import data.UserIO;
+import java.util.Date;
+import java.util.Set;
 
 public class AddEmailListServlet extends HttpServlet
 {    
@@ -29,6 +31,10 @@ public class AddEmailListServlet extends HttpServlet
         
         // store the User object in the request object
         request.setAttribute("user", user);
+        
+        // send the current date
+        Date currentDate = new Date();
+        request.setAttribute("currentDate", currentDate);
         
         // forward request and response objects to JSP page
         String url = "/display_email_entry_EL.jsp";
