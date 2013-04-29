@@ -31,7 +31,7 @@ public class AddEmailListServlet extends HttpServlet
         request.setAttribute("user", user);
         
         // forward request and response objects to JSP page
-        String url = "/display_email_entry.jsp";
+        String url = "/display_email_entry_EL.jsp";
         RequestDispatcher dispatcher =
              getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);              
