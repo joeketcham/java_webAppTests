@@ -31,6 +31,7 @@
         </table>
         <p>To give me more crap, click on the back<br> 
             button in your browser</p>
+        <p>Hello ${user.firstName}, today's date is: ${currentDate}</p>
         <form action="joinEmailList.jsp" method="post">
             <input type="submit" value="Return">
         </form>
