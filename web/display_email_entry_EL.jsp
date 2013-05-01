@@ -18,7 +18,7 @@
         <table cellspacing="5" cellpadding="5" border="1">
             <tr>
                 <td align="right">First name:</td>
-                <td>${user.firstName}</td>
+                <td>${user["firstName"]}</td>
             </tr>
             <tr>
                 <td align="right">Last name:</td>
@@ -31,7 +31,12 @@
         </table>
         <p>To give me more crap, click on the back<br> 
             button in your browser</p>
-        <p>Hello ${user.firstName}, today's date is: ${currentDate}</p>
+        <p>Hello ${user.firstName}, today's date is: ${ requestScope.currentDate }</p>
+        <p>The second color in the servlet is: ${colors[1]}</p>
+        <p>
+            The first address on file is: ${users[0].emailAddress}<br>
+            The second address on file is: ${users[1].emailAddress}
+        </p>
         <form action="joinEmailList.jsp" method="post">
             <input type="submit" value="Return">
         </form>

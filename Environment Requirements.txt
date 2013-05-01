@@ -1,0 +1,28 @@
+Utilized jdk1.6.0_38 but will likely work with any stable release of 1.6x
+Web server used in the code was Tomcat 7.0, text book refers to earlier 
+version but I found 7.0 to work just fine.
+
+The application is for educational purposes utilizing the text:
+
+Murach's Java Servlets and JSP (2nd Edition)
+ISBN: 978-1-890774-44-8
+Published January 2008
+
+For technical systems online this is a very dated technology but I wanted 
+to learn with something older that did less work in the background for me. 
+So far I'm half way through to date, I would highly recommend the text! 
+
+I started another book MVC 3.5 for ASP / C# technology but then found 
+myself in a job where the web apps I support were written in Java servlets 
+between 1998 and 2004! So I switched over to something more relevant to what
+I'm working with on a day to day basis. The production developers are updating
+the system which is slated to be in next year using ASP/C#, but software 
+is never delayed right?? :) Always on time?? 
+
+So I look forward to hacking away on this even if only for 15 minutes each 
+day as I balance my day job, family, and graduate school. Decided to put my
+stuff online public facing just to help motivate myself to keep hacking 
+away and eventually get through the book! 
+
+My contact info is in my github profile, feel free to reach out if you have
+some kind of question. 
