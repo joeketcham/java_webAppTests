@@ -37,6 +37,7 @@
             The first address on file is: ${users[0].emailAddress}<br>
             The second address on file is: ${users[1].emailAddress}
         </p>
+        <p>First name from hashMap: ${usersMap[emailAddress].firstName}</p>
         <form action="joinEmailList.jsp" method="post">
             <input type="submit" value="Return">
         </form>
