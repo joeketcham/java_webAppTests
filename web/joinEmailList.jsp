@@ -35,6 +35,7 @@
                                value="<jsp:getProperty name="user" property="emailAddress"/>"
                     </td>
                 </tr>
+                
                 <tr>
                     <td></td>
                     <td><br><input type="submit" value="Submit"></td>
