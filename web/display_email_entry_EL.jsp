@@ -41,6 +41,7 @@
         <p>Browser MIME types: ${header.accept}</p><br><br>
         <p>Browser compression types: ${header["accept-encoding"]}</p>
         <p>The email cookie: ${cookie.emailCookie.value}</p>
+        <p>The context init param: ${initParam.custServEmail}</p>
         <form action="joinEmailList.jsp" method="post">
             <input type="submit" value="Return">
         </form>
