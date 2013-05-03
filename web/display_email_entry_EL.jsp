@@ -38,6 +38,9 @@
             The second address on file is: ${users[1].emailAddress}
         </p>
         <p>First name from hashMap: ${usersMap[emailAddress].firstName}</p>
+        <p>Browser MIME types: ${header.accept}</p><br><br>
+        <p>Browser compression types: ${header["accept-encoding"]}</p>
+        <p>The email cookie: ${cookie.emailCookie.value}</p>
         <form action="joinEmailList.jsp" method="post">
             <input type="submit" value="Return">
         </form>
