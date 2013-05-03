@@ -45,5 +45,9 @@
         <form action="joinEmailList.jsp" method="post">
             <input type="submit" value="Return">
         </form>
+        <p>HTTP request method: ${pageContext.request.method}<br>
+        HTTP response type: ${pageContext.response.contentType}<br>
+        HTTP session ID: ${pageContext.session.id}<br>
+        HTTP contextPath: ${pageContext.servletContext.contextPath}</p>
     </body>
 </html>
