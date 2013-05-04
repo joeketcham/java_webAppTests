@@ -1,8 +1,9 @@
 
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="util.CookieUtil"%>
 <%@ include file="/includes/header.html" %>
         <h1>Hello World!</h1><br>
+        <a href="<c:url value='/joinEmailList.jsp' />">Join the mailing list Expression Language Tests</a><br><br>
         <a href="ch10/joinEmailList.jsp">ch10 joinEmailList.jsp</a><br>
         <a href="./AE">test AE link</a><br>
         <a href="./Emailsss">test servlet emailsss</a><br>
