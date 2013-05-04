@@ -3,7 +3,7 @@
     Created on : Apr 2, 2013, 5:46:53 PM
     Author     : jkk
 --%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="java.util.Enumeration"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -49,5 +49,12 @@
         HTTP response type: ${pageContext.response.contentType}<br>
         HTTP session ID: ${pageContext.session.id}<br>
         HTTP contextPath: ${pageContext.servletContext.contextPath}</p>
+        <br><br>
+        <p>
+            Codes test, comma delimited: 
+            <c:forTokens var="codes" items="${codesTest}" delims="," >
+        <li>${codes}</li>
+            </c:forTokens>
+        </p>
     </body>
 </html>
